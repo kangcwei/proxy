@@ -1,1 +1,1 @@
-# proxy
+#gost proxy socks5
