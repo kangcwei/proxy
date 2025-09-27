@@ -36,10 +36,11 @@ systemctl restart proxy
 # 获取服务器IP
 SERVER_IP=$(curl  ifconfig.me)
 
-echo " HTTP 代理已启动"
-echo "--------------------------------------"
-echo "地址: ${SERVER_IP}:${PORT}"
-echo "用户名: ${USER}"
-echo "密码: ${PASS}"
-echo "完整代理URL: http://${USER}:${PASS}@${SERVER_IP}:${PORT}"
-echo "--------------------------------------"
+echo -e "\033[1;32m✅ HTTP 代理已启动\033[0m"
+echo -e "\033[1;34m--------------------------------------\033[0m"
+echo -e "地址: \033[1;33m${SERVER_IP}:${PORT}\033[0m"
+echo -e "用户名: \033[1;36m${USER}\033[0m"
+echo -e "密码: \033[1;31m${PASS}\033[0m"
+echo -e "完整代理URL: \033[1;35mhttp://${USER}:${PASS}@${SERVER_IP}:${PORT}\033[0m"
+echo -e "\033[1;34m--------------------------------------\033[0m"
+
